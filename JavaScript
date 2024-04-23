@@ -1,0 +1,14 @@
+let big= document.getElementById("big");
+let small = document.querySelectorAll(".small-pic")
+console.log(small[1])
+console.log(big.src)
+
+for(let i=0;i<=small.length;i++)
+{
+   let current=small[i];
+   current.addEventListener('click',function belly(){
+           big.src=small[i].src;
+
+   })
+
+}
